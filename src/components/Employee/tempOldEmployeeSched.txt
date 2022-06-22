@@ -1,0 +1,137 @@
+{/* cardsEmploee */}
+        <div class="containerCards scroll" >
+            {/* 1 */}
+            <div class="cardEmployee itemAbcd">
+                <div class="boxEmployee">
+                    <div class="contentEmployee">
+                        <h2 class="h2Employee">01</h2>
+                        <h3 class="h3Employee">ראשון</h3>
+                        
+                        {/* console.log(curentEmployeeId.find(x=>x.day==1)); */}
+                        <form onSubmit={(e) => checkMe(e)}>
+                            {curentEmployeeId.map((item) =>
+                                item.day == 1 && <div>
+                                <p class="pEmployee">from houre{new Date(item.fromHoure).getHours() + ':' + new Date(item.fromHoure).getMinutes()}
+                                   <input type='time' placeholder='14:00am' dir='rtl' data-foo={1}  data-id={item.idSchetule} disabled={flag[0]} id='fromhoure'/>
+                                   <br/>
+                                   <input dir='rtl' disabled={flag[0]} placeholder={new Date(item.untilHoure).getHours() + ':' + new Date(item.untilHoure).getMinutes()} id='untilhoure'/>
+                                </p>
+                                    {addHour[0] && <>
+                                        <p class="pEmployee" style={{ display: 'inline-block' }}>  <input style={{ display: 'inline-block', width: '30%' }} /> -משעה</p>
+                                        <p class="pEmployee" style={{ display: 'inline-block' }}>  <input style={{ display: 'inline-block', width: '30%' }} /> -עד שעה</p>
+                                    </>}
+                                </div>
+                            )}
+
+                            {/* {(!flag)&& <p class="pEmployee"> אתה לא עובד היום😒</p>} */}
+                            {!addHour[0] && <input class="aEmployee" type='submit' value={meesegButton[0] == '' ? 'עדכון שעה' : meesegButton[0]} onClick={() => setD('update')}></input>}
+                            {flag[0] && <input type='button' class="aEmployee" value={meesegButton[0] == '' ? 'הוספת שעה' : meesegButton[0]} onClick={() => (setAddHour([true, false, false, false, false, false, false]), setMeesegButton(['אשר', '', '', '', '', '', '']))
+                            }></input>}
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            {/* 2 */}
+            <div class="cardEmployee itemAbcd">
+                <div class="boxEmployee">
+                    <div class="contentEmployee">
+                        <h2 class="h2Employee">02</h2>
+                        <h3 class="h3Employee">שני</h3>
+                        {curentEmployeeId.map((item) =>
+                            item.day == 2 &&
+                            <p class="pEmployee">from houre {new Date(item.fromHoure).getHours() + ':' + new Date(item.fromHoure).getMinutes()} until houre {new Date(item.untilHoure).getHours() + ':' + new Date(item.untilHoure).getMinutes()} 
+                                <input type='time'  dir='rtl' /><br />
+                            </p>
+                            // <p class="pEmployee"> אתה לא עובד היום😒</p>
+                        )}
+                        <a class="aEmployee" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {/* 3 */}
+            <div class="cardEmployee itemAbcd">
+                <div class="boxEmployee">
+                    <div class="contentEmployee">
+                        <h2 class="h2Employee">03</h2>
+                        <h3 class="h3Employee">שלישי</h3>
+                        {curentEmployeeId.map((item) =>
+                            item.day == 3 &&
+                            <p class="pEmployee">from houre {new Date(item.fromHoure).getHours() + ':' + new Date(item.fromHoure).getMinutes()} until houre {new Date(item.untilHoure).getHours() + ':' + new Date(item.untilHoure).getMinutes()}</p>
+                            // <p class="pEmployee"> אתה לא עובד היום😒</p>
+                        )}
+                        <a class="aEmployee" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            {/* 4 */}
+            <div class="cardEmployee itemAbcd">
+                <div class="boxEmployee">
+                    <div class="contentEmployee">
+                        <h2 class="h2Employee">04</h2>
+                        <h3 class="h3Employee">רביעי</h3>
+                        {curentEmployeeId.map((item) =>
+                            item.day == 4 &&
+                            <p class="pEmployee">from houre {new Date(item.fromHoure).getHours() + ':' + new Date(item.fromHoure).getMinutes()} until houre {new Date(item.untilHoure).getHours() + ':' + new Date(item.untilHoure).getMinutes()}</p>
+                            // <p class="pEmployee"> אתה לא עובד היום😒</p>
+                        )}
+                        <a class="aEmployee" href="#">עדכון שעות </a>
+                        <a class="aEmployee" href="#">הוספת שעות </a>
+
+                    </div>
+                </div>
+            </div>
+            {/* 5 */}
+            <div class="cardEmployee itemAbcd">
+                <div class="boxEmployee">
+                    <div class="contentEmployee">
+                        <h2 class="h2Employee">05</h2>
+                        <h3 class="h3Employee">חמישי</h3>
+                        {curentEmployeeId.map((item) =>
+                            item.day == 5 &&
+                            <p class="pEmployee">from houre {new Date(item.fromHoure).getHours() + ':' + new Date(item.fromHoure).getMinutes()} until houre {new Date(item.untilHoure).getHours() + ':' + new Date(item.untilHoure).getMinutes()}</p>
+                            // <p class="pEmployee"> אתה לא עובד היום😒</p>
+                        )}
+                        <a class="aEmployee" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {/* 6 */}
+            <div class="cardEmployee">
+                <div class="boxEmployee">
+                    <div class="contentEmployee">
+                        <h2 class="h2Employee">06</h2>
+                        <h3 class="h3Employee">שישי</h3>
+                        {curentEmployeeId.map((item) =>
+                            item.day == 6 &&
+                            <p class="pEmployee">from houre {new Date(item.fromHoure).getHours() + ':' + new Date(item.fromHoure).getMinutes()} until houre {new Date(item.untilHoure).getHours() + ':' + new Date(item.untilHoure).getMinutes()}</p>
+                            // <p class="pEmployee"> אתה לא עובד היום😒</p>
+                        )}
+                        <a class="aEmployee" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {/* 7 */}
+            <div class="cardEmployee">
+                <div class="boxEmployee">
+                    <div class="contentEmployee">
+                        <h2 class="h2Employee">07</h2>
+                        <h3 class="h3Employee">מוצ"ש</h3>
+                        {curentEmployeeId.map((item) =>
+                            item.day == 7 &&
+                            <p class="pEmployee">from houre {new Date(item.fromHoure).getHours() + ':' + new Date(item.fromHoure).getMinutes()} until houre {new Date(item.untilHoure).getHours() + ':' + new Date(item.untilHoure).getMinutes()}</p>
+                            // <p class="pEmployee"> אתה לא עובד היום😒</p>
+                        )}
+                        <a class="aEmployee" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/* </Carousel> */}
+        {/* untilHoure
+idEmployee
+fromHoure
+day */}
+    </>
+}

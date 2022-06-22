@@ -1,0 +1,318 @@
+/* Card sizing */
+/* Colors */
+/* Calculations */
+/* Placeholders */
+@media (min-width: 1000px) {
+    #timelineA1 .demo-cardA1:nth-child(odd) .headA1::after, #timelineA1 .demo-cardA1:nth-child(even) .headA1::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+   }
+    #timelineA1 .demo-cardA1:nth-child(odd) .headA1::before, #timelineA1 .demo-cardA1:nth-child(even) .headA1::before {
+      position: absolute;
+      content: "";
+      width: 9px;
+      height: 9px;
+      background-color: #bdbdbd;
+      border-radius: 9px;
+      box-shadow: 0px 0px 2px 8px #f7f7f7;
+   }
+  }
+  /* Some Cool Stuff */
+  .demo-cardA1:nth-child(1) {
+    order: 1;
+  }
+  .demo-cardA1:nth-child(2) {
+    order: 4;
+  }
+  .demo-cardA1:nth-child(3) {
+    order: 2;
+  }
+  .demo-cardA1:nth-child(4) {
+    order: 5;
+  }
+  .demo-cardA1:nth-child(5) {
+    order: 3;
+  }
+  .demo-cardA1:nth-child(6) {
+    order: 6;
+  }
+  /* .demo-cardA1:nth-child(7) {
+    order: 7;
+  } */
+  /* Border Box */
+  * {
+    box-sizing: border-box;
+  }
+  /* Fonts */
+  body {
+    font-family: Roboto;
+  }
+  #timelineA1 {
+    padding: 100px 0;
+    background: #f7f7f7;
+    border-top: 1px solid rgba(191, 191, 191, 0.4);
+    border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+  }
+  #timelineA1 .h1A1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+  #timelineA1 .pA1.leaderA1 {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 45px;
+  }
+  #timelineA1 .demo-cardA1-wrapper {
+    position: relative;
+    margin: auto;
+  }
+  @media (min-width: 1000px) {
+    #timelineA1 .demo-cardA1-wrapper {
+      display: flex;
+      flex-flow: column wrap;
+      width: 1170px;
+      height: 2050px;
+      margin: 0 auto;
+   }
+  }
+  #timelineA1 .demo-cardA1-wrapper::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid rgba(191, 191, 191, 0.4);
+  }
+  @media (min-width: 1000px) {
+    #timelineA1 .demo-cardA1-wrapper::after {
+      border-left: 1px solid #bdbdbd;
+   }
+  }
+  #timelineA1 .demo-cardA1 {
+    position: relative;
+    display: block;
+    margin: 10px auto 80px;
+    max-width: 94%;
+    z-index: 2;
+  }
+  @media (min-width: 480px) {
+    #timelineA1 .demo-cardA1 {
+      max-width: 60%;
+      box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+   }
+  }
+  @media (min-width: 720px) {
+    #timelineA1 .demo-cardA1 {
+      max-width: 40%;
+   }
+  }
+  @media (min-width: 1000px) {
+    #timelineA1 .demo-cardA1 {
+      max-width: 450px;
+      height: 400px;
+      margin: 90px;
+      margin-top: 45px;
+      margin-bottom: 45px;
+   }
+    #timelineA1 .demo-cardA1:nth-child(odd) {
+      margin-right: 45px;
+   }
+    #timelineA1 .demo-cardA1:nth-child(odd) .headA1::after {
+      border-left-width: 15px;
+      border-left-style: solid;
+      left: 100%;
+   }
+    #timelineA1 .demo-cardA1:nth-child(odd) .headA1::before {
+      left: 491.5px;
+   }
+    #timelineA1 .demo-cardA1:nth-child(even) {
+      margin-left: 45px;
+   }
+    #timelineA1 .demo-cardA1:nth-child(even) .headA1::after {
+      border-right-width: 15px;
+      border-right-style: solid;
+      right: 100%;
+   }
+    #timelineA1 .demo-cardA1:nth-child(even) .headA1::before {
+      right: 489.5px;
+   }
+    #timelineA1 .demo-cardA1:nth-child(2) {
+      margin-top: 180px;
+   }
+  }
+  #timelineA1 .demo-cardA1 .headA1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+  }
+  #timelineA1 .demo-cardA1 .headA1 .number-boxA1 {
+    display: inline;
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.17);
+  }
+  #timelineA1 .demo-cardA1 .headA1 .h2A1 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: inherit;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-bottom: 6px;
+    line-height: 1rem;
+  }
+  @media (min-width: 480px) {
+    #timelineA1 .demo-cardA1 .headA1 .h2A1 {
+      font-size: 165%;
+      line-height: 1.2rem;
+   }
+  }
+  #timelineA1 .demo-cardA1 .headA1 .h2A1 .apA1 {
+    display: block;
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  @media (min-width: 480px) {
+    #timelineA1 .demo-cardA1 .headA1 .h2A1 .apA1 {
+      font-size: 0.8rem;
+   }
+  }
+  #timelineA1 .demo-cardA1 .bodyA1 {
+    background: #fff;
+    border: 1px solid rgba(191, 191, 191, 0.4);
+    border-top: 0;
+    padding: 15px;
+  }
+  @media (min-width: 1000px) {
+    #timelineA1 .demo-cardA1 .bodyA1 {
+      height: 315px;
+   }
+  }
+  #timelineA1 .demo-cardA1 .bodyA1 .pA1 {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  #timelineA1 .demo-cardA1 .bodyA1 img {
+    display: block;
+    width: 100%;
+  }
+  #timelineA1 .demo-cardA1--step1 {
+    background-color:  rgb(57, 1, 90);
+  }
+  #timelineA1 .demo-cardA1--step1 .headA1::after {
+    border-color: rgb(57, 1, 90) ;
+  }
+  #timelineA1 .demo-cardA1--step2 {
+    background-color: rgba(57, 1, 90, 0.747);
+  }
+  #timelineA1 .demo-cardA1--step2 .headA1::after {
+    border-color: rgba(57, 1, 90, 0.747);
+  }
+  #timelineA1 .demo-cardA1--step3 {
+    background-color: rgba(57, 1, 90, 0.637);
+  }
+  #timelineA1 .demo-cardA1--step3 .headA1::after {
+    border-color: rgba(57, 1, 90, 0.637);
+  }
+  #timelineA1 .demo-cardA1--step4 {
+    background-color: rgba(57, 1, 90, 0.5);
+  }
+  #timelineA1 .demo-cardA1--step4 .headA1::after {
+    border-color: rgba(57, 1, 90, 0.5);
+  }
+  #timelineA1 .demo-cardA1--step5 {
+    background-color: rgba(57, 1, 90, 0.375);
+  }
+  #timelineA1 .demo-cardA1--step5 .headA1::after {
+    border-color: rgba(57, 1, 90, 0.375);
+  }
+  #timelineA1 .demo-cardA1--step6 {
+    background-color: rgba(57, 1, 90, 0.245);
+  }
+  #timelineA1 .demo-cardA1--step6 .headA1::after {
+    border-color: rgba(57, 1, 90, 0.245);
+  }
+  #timelineA1 .demo-cardA1--step7 {
+    background-color: rgba(57, 1, 90, 0.133);
+  }
+  #timelineA1 .demo-cardA1--step7 .headA1::after {
+    border-color: rgba(57, 1, 90, 0.133);
+  }
+  
+  
+  
+  /* button */
+  /* button {
+    margin: 20px;
+    outline: none;
+  } */
+  .custom-btnA1 {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  
+  
+  /* 5 */
+  .btn-5A1 {
+    background: #000;
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-5A1:hover {
+    background: transparent;
+    color: #000;
+     box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+  }
+  .btn-5A1:before,
+  .btn-5A1:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #000;
+    transition:400ms ease all;
+  }
+  .btn-5A1:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5A1:hover:before,
+  .btn-5A1:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
